@@ -205,8 +205,7 @@ GizwitsWS.prototype.setLoginParams = function(heartbeatTime, keepalive, autoSubs
 GizwitsWS.prototype._getUserToken = function()
 {
     var me = this;
-    //var url = "https://{0}/app/users".format(me._apiHost);
-    var url = "http://{0}/app/users".format(me._apiHost);
+    var url = "https://{0}/app/users".format(me._apiHost);
     $.ajax(url,
         {
             type: "POST",
@@ -233,8 +232,7 @@ GizwitsWS.prototype._getUserToken = function()
 GizwitsWS.prototype._getBindingList = function(limit, skip)
 {
     var me = this;
-    //var url = "https://{0}/app/bindings".format(me._apiHost);
-    var url = "http://{0}/app/bindings".format(me._apiHost);
+    var url = "https://{0}/app/bindings".format(me._apiHost);
     var query = "?show_disabled=0&limit=" + limit + "&skip=" + skip;
     $.ajax(url + query, 
         {
